@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>info.kurozeropb.commit-reminder</id>
+    <name>Commit Reminder</name>
+    <vendor email="root@kurozeropb.info" url="https://kurozeropb.info">KurozeroPB</vendor>
+
+    <description><![CDATA[
+    Periodically notify to commit new changes to github
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <project-components>
+        <component>
+            <implementation-class>
+                info.kurozeropb.CommitReminder
+            </implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>
